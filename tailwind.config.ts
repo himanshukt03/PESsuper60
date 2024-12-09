@@ -1,18 +1,13 @@
-import type { Config } from "tailwindcss";
-
-export default {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+module.exports = {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        creme: '#f7f1e3',
+        primary: '#1e90ff',
+        secondary: '#ff6f61',
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
